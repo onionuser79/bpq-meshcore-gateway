@@ -1,0 +1,13 @@
+gateway:
+  callsign: "YOURCALL-7"       # Gateway's identity (for logging)
+  idle_timeout: 300            # Seconds of inactivity before auto-disconnect
+
+bpq:
+  host: "127.0.0.1"           # BPQ32 host IP
+  port: 8010                   # BPQ TelnetServer port
+
+meshcore:
+  connection: "serial"         # serial | ble | tcp
+  device: "/dev/ttyUSB0"      # Serial device path (or BLE addr / TCP host:port)
+  baud: 115200
+  channel_idx: 4              # Private channel index to listen on
